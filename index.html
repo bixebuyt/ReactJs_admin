@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin Dashboard</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">		
+		<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="wp-content clearfix">
+				<h1>Admin Dashboard</h1>
+				<div class="login">
+					<div class="notice">
+						<a><i class="fa fa-bell flt-left" aria-hidden="true"></i><span>3</span></a>
+						<div class="list-notice">
+							<ul>
+								<li><p>13/07/2018</p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</li>
+								<li><p>13/07/2018</p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</li>
+								<li><p>13/07/2018</p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</li>
+							</ul>
+						</div>
+					</div>
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Search">
+			        </div>
+			        <button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+			      </form>
+					<a href="#"><span>Logout: </span><i class="fa fa-sign-out" aria-hidden="true"></i></a>			     					
+				</div>
+			</div>
+		</header>
+
+		<aside>
+			<div class="list-category">
+				<div class="info-user clearfix">
+					<div class="avatar flt-left"><img src="assets/images/avatar.png" alt="avatar User" /></div>
+					<div class="profile">
+						<strong>Ngo Van Minh Nhat</strong>
+						<p>Admin</p>
+					</div>
+				</div>
+				<div class="box-search-category clearfix">
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Search">
+			        </div>
+			        <button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+			      </form>				
+				</div>
+				<div class="box-category __border-top-none">
+					<h2>Task Manager</h2>
+					<div class="category">
+						<h3><i class="fa fa-newspaper-o" aria-hidden="true"></i><span class="close-small-width">Ariticle</span></h3>
+					</div>
+					<div class="category">
+						<h3><i class="fa fa fa-file-image-o" aria-hidden="true"></i><span class="close-small-width">Pictures</span></h3>
+					</div>
+					<div class="category">
+						<h3><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="close-small-width">Mail Contact</span></h3>
+					</div>
+					<div class="category">
+						<h3><i class="fa fa-braille" aria-hidden="true"></i><span class="close-small-width">Other</span></h3>
+					</div>					
+				</div>
+				<div class="box-category">
+					<h2>Config</h2>
+					<div class="category">
+						<h3><i class="fa fa-cog" aria-hidden="true"></i><span class="close-small-width">Config General</span></h3>
+					</div>
+					<div class="category">
+						<h3><i class="fa fa-line-chart" aria-hidden="true"></i><span class="close-small-width">Chart</span></h3>
+					</div>
+				</div>	
+				<div class="box-category">
+					<h2>User Manager</h2>
+					<div class="category">
+						<h3><i class="fa fa-newspaper-o" aria-hidden="true"></i><span class="close-small-width">Ariticle</span></h3>
+					</div>
+					<div class="category">
+						<h3><i class="fa fa-wrench" aria-hidden="true"></i><span class="close-small-width">Configuration SMTP</span></h3>
+					</div>
+				</div>																
+			</div>
+			<div class="close-aside"></div>			
+		</aside>	
+
+		<!---- CONTENT MAIN ------->
+		<div id="content">			
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="#">Home</a></li>
+			  <li class="breadcrumb-item active">Library</li>
+			</ol>
+			<section class="table-content">
+				<div class="col-md-12">
+				   <h4>Bootstrap Snipp for Datatable</h4>
+				   <div class="filter-item">
+				   	<input type="text" placeholder="Search..." />
+						<div class="dropdown">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">A - Z</a></li>
+								<li><a href="#">Z - A</a></li>
+								<li><a href="#">DESC</a></li>
+								<li><a href="#">ASC</a></li>
+							</ul>
+						</div>							
+				   </div>
+				   <div class="table-responsive">
+				      <table id="mytable" class="table table-bordred table-striped">
+				         <thead>
+				            <th><input type="checkbox" id="checkall" /></th>
+				            <th>First Name</th>
+				            <th>Last Name</th>
+				            <th>Address</th>
+				            <th>Email</th>
+				            <th>Active</th>
+				            <th>Edit</th>
+				            <th>Delete</th>
+				         </thead>
+				         <tbody>
+				            <tr>
+				               <td><input type="checkbox" class="checkthis" /></td>
+				               <td>Mohsin</td>
+				               <td>Irshad</td>
+				               <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				               <td>isometric.mohsin@gmail.com</td>
+				               <td class="icon-active"><img src="assets/images/active.png" alt="active" /></td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+				               </td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p>
+				               </td>
+				            </tr>
+				            <tr>
+				               <td><input type="checkbox" class="checkthis" /></td>
+				               <td>Mohsin</td>
+				               <td>Irshad</td>
+				               <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				               <td>isometric.mohsin@gmail.com</td>
+				               <td class="icon-active"><img src="assets/images/active.png" alt="active" /></td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+				               </td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p>
+				               </td>
+				            </tr>
+				            <tr>
+				               <td><input type="checkbox" class="checkthis" /></td>
+				               <td>Mohsin</td>
+				               <td>Irshad</td>
+				               <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				               <td>isometric.mohsin@gmail.com</td>
+				               <td class="icon-active"><img src="assets/images/active.png" alt="active" /></td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+				               </td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p>
+				               </td>
+				            </tr>
+				            <tr>
+				               <td><input type="checkbox" class="checkthis" /></td>
+				               <td>Mohsin</td>
+				               <td>Irshad</td>
+				               <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				               <td>isometric.mohsin@gmail.com</td>
+				               <td class="icon-active"><img src="assets/images/active.png" alt="active" /></td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+				               </td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p>
+				               </td>
+				            </tr>
+				            <tr>
+				               <td><input type="checkbox" class="checkthis" /></td>
+				               <td>Mohsin</td>
+				               <td>Irshad</td>
+				               <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				               <td>isometric.mohsin@gmail.com</td>
+				               <td class="icon-active"><img src="assets/images/active.png" alt="active" /></td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+				               </td>
+				               <td>
+				                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p>
+				               </td>
+				            </tr>
+				         </tbody>
+				      </table>
+				      <div class="clearfix"></div>
+				      <ul class="pagination pull-right">
+				         <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+				         <li class="active"><a href="#">1</a></li>
+				         <li><a href="#">2</a></li>
+				         <li><a href="#">3</a></li>
+				         <li><a href="#">4</a></li>
+				         <li><a href="#">5</a></li>
+				         <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				      </ul>
+				   </div>
+				</div>
+				</div>
+				</div>
+				<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+				   <div class="modal-dialog">
+				      <div class="modal-content">
+				         <div class="modal-header">
+				            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+				            <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+				         </div>
+				         <div class="modal-body">
+				            <div class="form-group">
+				               <input class="form-control " type="text" placeholder="Mohsin">
+				            </div>
+				            <div class="form-group">
+				               <input class="form-control " type="text" placeholder="Irshad">
+				            </div>
+				            <div class="form-group">
+				               <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
+				            </div>
+				         </div>
+				         <div class="modal-footer ">
+				            <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
+				         </div>
+				      </div>
+				      <!-- /.modal-content --> 
+				   </div>
+				   <!-- /.modal-dialog --> 
+				</div>
+				<!-- /.modal-content -->
+			</section>
+		</div>
+		<footer>
+			
+		</footer>
+
+		<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
